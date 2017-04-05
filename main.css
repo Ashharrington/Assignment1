@@ -1,0 +1,272 @@
+html {
+    background: url(sand.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: skyblue;
+}
+
+li.dropdown {
+    display: inline-block;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: skyblue;
+    min-width: 160px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.dropdown-content a:hover {background-color: skyblue}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: skyblue;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:visited {
+    background-color: skyblue;
+}
+
+ul.topnav li a:hover {
+    color: #ffef1b;
+    text-decoration: underline;
+}
+
+ul.topnav li a:active {
+    color: #ffef1b;
+}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right,
+    ul.topnav li {float: none;}
+}
+
+table, th, td {
+
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 22px;
+    padding: 2px;
+}
+
+tr:nth-child(even){background-color: lightgrey}
+
+fieldset {
+    border: 2px solid darkblue;
+    background-color: skyblue;
+    border-radius: 5px 20px;
+    width: auto;
+}
+
+fieldset a {
+
+}
+
+form  {
+    text-align:center;
+}
+
+body {
+    font: 18px Tahoma, sans-serif;
+    font-family: Tahoma, Geneva, sans-serif;
+    margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+div.bodycolumn {
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 50px;
+    border: 2px solid black;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px 50px;
+}
+
+.bodycolumn p {
+    text-align: center;
+}
+
+footer {
+    position:fixed;
+    overflow: hidden;
+    left:0;
+    bottom:0;
+    height:20px;
+    padding: 5px;
+    width:100%;
+    background: whitesmoke;
+    text-align: center;
+}
+
+.footer1 {
+    float:left;
+    text-align: left;
+}
+
+.footer2 {
+    float:right;
+    text-align: right;
+}
+
+.footer3 {
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    width: auto;
+    text-align: left;
+    Background-color: darkblue;
+    border-radius: 15px 30px;
+}
+
+.text:hover {
+    background-color: #1F57FF;
+    opacity: .9;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}

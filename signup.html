@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+<header>
+    <img src="banner.jpg">
+</header>
+
+<ul class="topnav">
+    <li><a href="Index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li class="dropdown">
+        <a href="javascript:void(0)" class="dropbtn">Events & Competions</a>
+        <div class="dropdown-content">
+            <a href="Competitives.html">Current Ladder</a>
+            <a href="CompetitionInfo.html">Who Can Play</a>
+            <a href="Guidelines.html">Playing Guidelines</a>
+        </div>
+    </li>
+    <li><a href="signup.html">Sign-up</a></li>
+    <li><a href="Announcements.html">Announcements</a></li>
+    <li><a href="Contact Us.html">Contact Us</a></li>
+</ul>
+
+<div class="bodycolumn">
+
+    <fieldset>
+
+        <p>
+            Slammers Beach Volleyball club is growing everyday.<br>
+            You too can become a part of the club today!
+        </p>
+
+    <form action="#" method="get">
+        <p><strong>First Name: </strong><br><input type="text" name="First Name"></p>
+        <p><strong>Last Name: </strong><br><input type="text" name="Last Name" value=""></p>
+        <p><strong>Contact Phone No.: </strong><br><input type="text" name="Contact Phone No." value=""></p>
+        <p><strong>Email Address: </strong><br><input type="text" name="email" value=""></p>
+        <p><label for="select"><strong>Competition Day</strong>:</label><br>
+            <select name="select" id="select">
+                <option value="select">Select One</option>
+                <option value="Monday">Monday</option>
+                <option value="Tuesday">Tuesday</option>
+                <option value="Wednesday">Wednesday</option>
+                <option value="Thursday">Thursday</option>
+                <option value="Friday">Friday</option>
+                <option value="Saturday">Saturday</option>
+                <option value="Sunday">Sunday</option>
+            </select>
+        </p>
+
+        <p><label for="select"><strong>Competition Time</strong>:</label><br>
+            <select name="select" id="select">
+                <option value="select">Select One</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+            </select>
+        </p>
+      <p><strong>Do you agree to the <a href="Guidelines.html" target="_blank">Playing Guidelines:</a></strong>
+          <input type="checkbox" name="TnC's" value="Yes" /></p>
+
+        <p>
+        <input type="submit" value="Submit now">
+        <input type="reset" value="Clear the Form">
+        </p>
+    </form>
+    </fieldset>
+
+</div>
+
+
+<footer>
+    <div class="footer1">&copy; Slammers Beach Volleyball</div>
+    <div class="footer2">Website Created by Ashley Harrington</div>
+</footer>
+</body>
+</html>
