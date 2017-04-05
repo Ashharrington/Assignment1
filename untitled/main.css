@@ -40,8 +40,7 @@ li.dropdown {
     position: absolute;
     background-color: skyblue;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+
 }
 
 .dropdown-content a {
@@ -66,7 +65,6 @@ ul.topnav {
     background-color: skyblue;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px;
-
 }
 
 ul.topnav li {
@@ -80,10 +78,6 @@ ul.topnav li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-h1 {
-    text-align: center;
 }
 
 ul.topnav li a:visited {
@@ -108,16 +102,39 @@ table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     text-align: center;
-    font-size: larger;
+    font-size: 22px;
     padding: 2px;
 }
 
 tr:nth-child(even){background-color: lightgrey}
 
+fieldset {
+    border: 2px solid darkblue;
+    background-color: skyblue;
+    border-radius: 5px 20px;
+    width: auto;
+}
+
+fieldset a {
+
+}
+
+form  {
+    text-align:center;
+}
+
 body {
     font: 18px Tahoma, sans-serif;
     font-family: Tahoma, Geneva, sans-serif;
     margin-bottom: 50px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
 }
 
 div.bodycolumn {
@@ -128,6 +145,10 @@ div.bodycolumn {
     padding: 20px;
     background-color: white;
     border-radius: 15px 50px;
+}
+
+.bodycolumn p {
+    text-align: center;
 }
 
 footer {
@@ -144,4 +165,92 @@ footer {
 
 header img {
     width: 100%;
+}
+
+.slideshow {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    border: 2px solid black;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    background-color: black;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+    color: white;
+    font-size: 35px;
+    padding: 10px;
+    position: absolute;
+    top: 20px;
+    width: auto;
+    text-align: left;
+    Background-color: darkblue;
+}
+
+.text:hover {
+    background-color: #1F57FF;
+    opacity: .9;
+}
+
+.text a {
+    text-decoration: none;
+    color: white;
+}
+
+.dot {
+    cursor:pointer;
+    height: 13px;
+    width: 13px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
 }
