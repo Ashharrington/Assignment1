@@ -138,6 +138,12 @@ h2 {
     text-align: center;
 }
 
+.bodycolumn .bodyimg {
+    position:relative;
+    float: left;
+    padding: 10px;
+}
+
 div.bodycolumn {
     margin-left: 20%;
     margin-right: 20%;
